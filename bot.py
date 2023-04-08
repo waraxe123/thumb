@@ -92,9 +92,6 @@ def TimeFormatter(milliseconds: int) -> str:
     return tmp[:-2]
     
     
-@bot.on_message(filters.command("start") & filters.private)
-async def start_bot(c, m):
-    await m.reply("This bot is a bot for changing video thumbnails with your custom photos")
 
 @bot.on_message(filters.command("help") & filters.private)
 async def help_bot(c, m):
